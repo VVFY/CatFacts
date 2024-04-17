@@ -9,12 +9,16 @@ import com.example.domain.response.Response
 fun Context.resolveErrorMessage(error: Response.Error?): String? {
     return when {
         error?.errorCode != null -> {
-            return if (error.errorCode == ErrorCode.NETWORK_ERROR) {
-                getString(R.string.network_error)
-            } else if (error.errorCode == ErrorCode.API_ERROR) {
-                getString(R.string.api_error)
-            } else {
-                getString(R.string.unknown_error)
+            return when (error.errorCode) {
+                ErrorCode.NETWORK_ERROR -> {
+                    getString(R.string.network_error)
+                }
+                ErrorCode.API_ERROR -> {
+                    getString(R.string.api_error)
+                }
+                else -> {
+                    getString(R.string.unknown_error)
+                }
             }
         }
         error?.message != null && BuildConfig.DEBUG -> {

@@ -3,7 +3,6 @@ package com.example.data.di
 import com.example.data.BuildConfig
 import com.example.data.remote.service.CatFactService
 import com.example.data.remote.utils.MoshiInstance
-import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
