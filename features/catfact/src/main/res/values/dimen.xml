@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="general_horizontal_padding_10">10dp</dimen>
+    <dimen name="general_vertical_padding_10">10dp</dimen>
+    <dimen name="fact_side_spacing">30dp</dimen>
+    <dimen name="scroll_button_size">50dp</dimen>
+    <dimen name="scroll_button_spacing">40dp</dimen>
+</resources>

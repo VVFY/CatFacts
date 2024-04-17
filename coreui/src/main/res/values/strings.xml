@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unknown_error">An unknown error has occurred!</string>
+    <string name="api_error">Sorry, something ent wrong!</string>
+    <string name="network_error">Please check your internet connection!</string>
+</resources>
